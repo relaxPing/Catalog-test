@@ -1,0 +1,22 @@
+[{
+  "age" : "2017",
+  "id" : "rockstar",
+  "name" : "Rockstar",
+  "imageUrl" : "images-detail/music/rockstar.jpg",
+  "snippet" : "Post Malone,21 Savage",
+  "type" : "music"
+},{
+  "age" : "2017",
+  "id" : "bodak-yellow",
+  "name" : "Bodak Yellow",
+  "imageUrl" : "images-detail/music/bodak-yellow.jpg",
+  "snippet" : "Cardi B",
+  "type" : "music"
+},{
+  "age" : "2017",
+  "id" : "look-what-you-made-me-do",
+  "name" : "Look What You Made Me Do",
+  "imageUrl" : "images-detail/music/look-what-you-made-me-do.jpg",
+  "snippet" : "Tylor Swift",
+  "type" : "music"
+}]

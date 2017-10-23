@@ -1,0 +1,123 @@
+
+<div>
+    <self-Carousel></self-Carousel>
+</div>
+
+
+<!--Interests-->
+<div class="container-fluid title-self">
+    <p>Explore Interest Areas</p>
+</div>
+
+<div class="container-fluid interests">
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-3">
+            <a href="#!/music">
+                <div class="panel panel-default text-center panel-max">
+                    <div class="panel-body">
+                        </br></br></br>
+                        <span class="glyphicon glyphicon-music icon-size"></span></br>
+                        <p>Music</p>
+                        </br></br></br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#!/movie">
+                <div class="panel panel-default text-center panel-max">
+                    <div class="panel-body">
+                        </br></br></br>
+                        <span class="glyphicon glyphicon-facetime-video icon-size"></span></br>
+                        <p>Movie</p>
+                        </br></br></br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="#!/phone">
+                <div class="panel panel-default text-center panel-max">
+                    <div class="panel-body">
+                        </br></br></br>
+                        <span class="glyphicon glyphicon-phone icon-size"></span></br>
+                        <p>Phone</p>
+                        </br></br></br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-1">
+        </div>
+    </div>
+</div>
+
+<!--contact me-->
+<div class="container-fluid bg-grey contactbg-self">
+    <h2 class="text-center">CONTACT</h2></br>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Dallas, TX</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +00 6822480908</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> xinpingxian@gmail.com</p>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Map-->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+    function myMap() {
+        var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+        var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2c-8unzWE68JSh_giFsETs16vhvFYWc8&callback=myMap"></script>
+
+
+
+<!--Nav Bar-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">INTEREST</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
